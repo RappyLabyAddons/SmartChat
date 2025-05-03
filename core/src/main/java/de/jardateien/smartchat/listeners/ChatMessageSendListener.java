@@ -52,13 +52,18 @@ public class ChatMessageSendListener {
     list.put("{dimension}", world.dimension().getPath());
     list.put("{heart}", this.format.format(member.getHealth()));
 
-    for (Entry<String, String> entry : list.entrySet()) {
-      if(value.toLowerCase().contains(entry.getKey())) {
-        value = value.replace(entry.getKey(), entry.getValue());
+    boolean changed;
+    do {
+      changed = false;
+      for (Entry<String, String> entry : list.entrySet()) {
+        if (value.contains(entry.getKey())) {
+          value = value.replace(entry.getKey(), entry.getValue());
+          changed = true;
+        }
       }
-    }
+    } while (changed);
 
-    receiveEvent.changeMessage(value);
+    receiveEvent.changeMessage(value, receiveEvent.getHistoryText());
   }
 
 
