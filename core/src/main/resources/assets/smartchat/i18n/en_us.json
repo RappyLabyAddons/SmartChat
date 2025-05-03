@@ -1,0 +1,29 @@
+{
+  "smartchat": {
+    "settings": {
+      "enabled": {
+        "name": "Enabled"
+      },
+      "header": {
+        "general": {
+          "name": "General"
+        },
+        "chatNotification": {
+          "name": "Chat Notification"
+        }
+      },
+      "locationFormat": {
+        "name": "Location Format"
+      },
+      "positionFormat": {
+        "name": "Position Format"
+      },
+      "enabledPing": {
+        "name": "Enabled Ping"
+      },
+      "volume": {
+        "name": "Volume"
+      }
+    }
+  }
+}
