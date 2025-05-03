@@ -23,6 +23,9 @@
       },
       "volume": {
         "name": "Volume"
+      },
+      "pitch": {
+        "name": "Pitch"
       }
     }
   }

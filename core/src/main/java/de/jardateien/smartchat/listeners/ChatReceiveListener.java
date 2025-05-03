@@ -29,7 +29,9 @@ public class ChatReceiveListener {
     String message = chatMessage.getFormattedText();
     if(!message.contains(labyAPI.getName())) return;
 
-    labyAPI.minecraft().sounds().playSound(ResourceLocation.create("labymod", "marker.marker_notify"), this.configuration.getVolume().get(), 1.2F);
+    labyAPI.minecraft().sounds()
+        .playSound(ResourceLocation.create("labymod", "marker.marker_notify"),
+            this.configuration.getVolume().get(), this.configuration.getPitch().get());
   }
 
 }

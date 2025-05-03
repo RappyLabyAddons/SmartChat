@@ -25,6 +25,8 @@ public class SmartChatConfiguration extends AddonConfig {
   private final ConfigProperty<Boolean> enabledPing = new ConfigProperty<>(true);
   @SliderSetting(min = 0F, max = 2F, steps = 0.1F)
   private final ConfigProperty<Float> volume = new ConfigProperty<>(1F);
+  @SliderSetting(min = 0F, max = 2F, steps = 0.1F)
+  private final ConfigProperty<Float> pitch = new ConfigProperty<>(1.2F);
 
   @Override
   public ConfigProperty<Boolean> enabled() {
@@ -43,5 +45,8 @@ public class SmartChatConfiguration extends AddonConfig {
   }
   public ConfigProperty<Float> getVolume() {
     return this.volume;
+  }
+  public ConfigProperty<Float> getPitch() {
+    return this.pitch;
   }
 }
