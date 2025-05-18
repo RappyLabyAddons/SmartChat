@@ -77,7 +77,7 @@ public abstract class SmartChatPlaceholder {
    */
   @Nullable
   public String getDescription() {
-    if (this.getDescriptionKey() == null || I18n.has(this.getDescriptionKey()))
+    if (this.getDescriptionKey() == null || !I18n.has(this.getDescriptionKey()))
       return null;
     return I18n.translate(this.getDescriptionKey());
   }
@@ -89,7 +89,7 @@ public abstract class SmartChatPlaceholder {
    */
   @Nullable
   public Component getDescriptionComponent() {
-    if (this.getDescriptionKey() == null || I18n.has(this.getDescriptionKey()))
+    if (this.getDescriptionKey() == null || !I18n.has(this.getDescriptionKey()))
       return null;
     return Component.translatable(this.getDescriptionKey());
   }
