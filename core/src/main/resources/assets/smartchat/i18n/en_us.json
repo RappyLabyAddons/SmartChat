@@ -28,6 +28,19 @@
       "pitch": {
         "name": "Pitch"
       }
+    },
+    "placeholders": {
+      "gamemode": "Displays the your current game mode.",
+      "health": "Displays your current health.",
+      "pitch": "Displays the pitch angle (vertical rotation) of your head, useful for orientation.",
+      "location": "Combines your X, Y, and Z coordinates into a single formatted location string.",
+      "x": "Shows your current X coordinate (east/west position in the world).",
+      "yaw": "Displays the yaw angle (horizontal rotation) of your head, indicating direction faced.",
+      "y": "Shows your current Y coordinate (vertical height or elevation in the world).",
+      "z": "Displays your current Z coordinate (north/south position in the world).",
+      "position": "Shows a formatted string including your position and orientation (coordinates + yaw/pitch).",
+      "biome": "Displays the name of the biome the player is currently in.",
+      "dimension": "Indicates the current dimension the player is in."
     }
   }
 }
