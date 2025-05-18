@@ -10,6 +10,7 @@ Placeholder {
   }
 
   .use-button {
+    width: 30;
     margin-right: 5;
   }
 }
