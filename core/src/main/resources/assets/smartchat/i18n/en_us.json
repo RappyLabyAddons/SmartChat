@@ -18,8 +18,9 @@
       "positionFormat": {
         "name": "Position Format"
       },
-      "enabledPing": {
-        "name": "Enabled Ping"
+      "pingSound": {
+        "name": "Ping sound",
+        "description": "Plays a sound when someone writes your name in chat"
       },
       "volume": {
         "name": "Volume"
