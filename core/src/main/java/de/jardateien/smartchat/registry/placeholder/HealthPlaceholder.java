@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 public class HealthPlaceholder extends SmartChatPlaceholder {
 
   public HealthPlaceholder(SmartChatAddon addon) {
-    super(addon, "biome");
+    super(addon, "health");
   }
 
   @Override

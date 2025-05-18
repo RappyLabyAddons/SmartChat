@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 public class GameModePlaceholder extends SmartChatPlaceholder {
 
   public GameModePlaceholder(SmartChatAddon addon) {
-    super(addon, "biome");
+    super(addon, "gamemode");
   }
 
   @Override

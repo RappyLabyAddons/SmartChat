@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class LocationPlaceholder extends SmartChatPlaceholder {
 
   public LocationPlaceholder(SmartChatAddon addon) {
-    super(addon, "biome");
+    super(addon, "location");
   }
 
   @Override
