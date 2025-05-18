@@ -1,0 +1,36 @@
+.window {
+  width: 35%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(10, 10, 10, 100);
+
+  .title-bar {
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 14;
+
+    background-color: rgba(10, 10, 10, 100);
+
+    Component {
+      left: 2;
+      alignment-y: center;
+    }
+  }
+
+  Scroll {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+
+    .placeholders {
+      left: 0;
+      top: 0;
+      right: 0;
+      height: fit-content;
+    }
+  }
+}

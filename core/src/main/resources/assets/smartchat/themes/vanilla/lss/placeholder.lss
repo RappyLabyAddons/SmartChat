@@ -1,0 +1,15 @@
+Placeholder {
+  width: 100%;
+  height: 30;
+  layout: spread;
+
+  background-color: rgba(10, 10, 10, 10);
+
+  .identifier {
+    margin-left: 3;
+  }
+
+  .use-button {
+    margin-right: 5;
+  }
+}
