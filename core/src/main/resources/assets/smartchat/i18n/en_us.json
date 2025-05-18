@@ -41,6 +41,19 @@
       "position": "Shows a formatted string including your position and orientation (coordinates + yaw/pitch).",
       "biome": "Displays the name of the biome the player is currently in.",
       "dimension": "Indicates the current dimension the player is in."
+    },
+    "chatInput": {
+      "placeholderMenu": {
+        "name": "SmartChat Placeholders",
+        "title": "Placeholders",
+        "duplicateIdentifier": "There are multiple placeholders with this name so you need to use the full identifier",
+        "uniqueIdentifier": "There is only one placeholder with this name so you can omit the namespace",
+        "hover": {
+          "description": "Description: %s",
+          "version": "Version: %s"
+        },
+        "use": "Use"
+      }
     }
   }
 }
