@@ -23,6 +23,14 @@ public class DefaultPlaceholderRegistry implements PlaceholderRegistry {
   }
 
   @Override
+  public boolean unregister(@NotNull String namespace, @NotNull String id) {
+    String key = namespace + ":" + id;
+    if(!this.placeholders.containsKey(key)) return false;
+    this.placeholders.remove(key);
+    return true;
+  }
+
+  @Override
   public Collection<SmartChatPlaceholder> getPlaceholders() {
     return Collections.unmodifiableCollection(this.placeholders.values());
   }

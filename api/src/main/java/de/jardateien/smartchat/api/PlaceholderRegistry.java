@@ -18,6 +18,15 @@ public interface PlaceholderRegistry {
   void register(@NotNull SmartChatPlaceholder placeholder);
 
   /**
+   * Unregisters and removes a {@link SmartChatPlaceholder} from the registry.
+   *
+   * @param namespace the placeholder namespace to unregister; must not be {@code null}
+   * @param id the placeholder id to unregister; must not be {@code null}
+   * @return whether the namespace was successfully removed or not
+   */
+  boolean unregister(@NotNull String namespace, @NotNull String id);
+
+  /**
    * Retrieves all registered {@link SmartChatPlaceholder} instances.
    *
    * @return a collection of all registered placeholders
